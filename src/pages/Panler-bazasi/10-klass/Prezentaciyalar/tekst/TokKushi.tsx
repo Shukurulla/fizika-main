@@ -2,9 +2,7 @@ export const TokKushi = () => {
     return (
         <div className="pdf-box">
             <h3>TOK KÚSHI HÁM TOKTÍŃ TÍǴÍZLÍǴÍ</h3>
-            <object data="/panler-bazasi/10-klass/Prezentaciyalar/tekst/tok-kushi-ham-toktin-tigizligi.pdf" type="application/pdf" width="100%" height="500px">
-                <p>Unable to display PDF file. <a href="/panler-bazasi/10-klass/Prezentaciyalar/tekst/tok-kushi-ham-toktin-tigizligi.pdf">Download</a> instead.</p>
-            </object>
+            <iframe src="https://docs.google.com/presentation/d/1-IEP4RbgxAueytRrWToWn6n_-qJheHZZODo11aXGmSI/preview" className='docc' allow="autoplay"></iframe>
         </div>
     )
 }

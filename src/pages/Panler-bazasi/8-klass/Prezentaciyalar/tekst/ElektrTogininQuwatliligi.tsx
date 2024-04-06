@@ -1,10 +1,8 @@
 export const ElektrTogininQuwatliligi = () => {
     return (
         <div className="pdf-box">
-            <h3>Tolıq shınjır ushın Om nızamı</h3>
-            <object data="/panler-bazasi/10-klass/Prezentaciyalar/tekst/toliq-shinjir-ushin-om-nizami.pdf" type="application/pdf" width="100%" height="500px">
-                <p>Unable to display PDF file. <a href="/panler-bazasi/10-klass/Prezentaciyalar/tekst/toliq-shinjir-ushin-om-nizami.pdf">Download</a> instead.</p>
-            </object>
+            <h3>Elektr togınıń quwatlılıǵı</h3>
+            <iframe src="https://docs.google.com/presentation/d/1R4OUtP4w8R2JpjkB7L0-Dv1fC7yD8OPXZj_VclXkVcE/preview" className='docc' allow="autoplay"></iframe>
         </div>
     )
 }

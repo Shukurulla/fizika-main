@@ -1,19 +1,16 @@
-import React, { useEffect, useRef } from 'react'
-import CloudPdfViewer from "@cloudpdf/viewer";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const AmeliyTekst8 = () => {
-  const viewer = useRef<any>(null);
-  useEffect(() => {
-    CloudPdfViewer(
-      {
-        documentId: "ae9f569a-6727-422b-ac12-007dc2c66a5c",
-        darkMode: false
-      },
-      viewer.current
-    ).then((instance) => { });
-  }, []);
+export const AmeliyTekst8: React.FC = () => {
 
   return (
-    <div className="viewer" ref={viewer}></div>
+    <div className="list">
+      <h2>Ámeliy tapsırmalar</h2>
+      <ul>
+        <Link to={'/panler-bazasi/8-klass/ameliy/tekst/tok-dereklerin-tutastiriw'}>
+          <li><span>Tok dereklerin tutastırıw</span></li>
+        </Link>
+      </ul>
+    </div>
   )
 }

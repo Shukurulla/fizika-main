@@ -19,6 +19,27 @@ import Reostat from '../pages/Panler-bazasi/7-klass/Ámeliy-shınıǵıwlar/teks
 import { TokKushi } from '../pages/Panler-bazasi/10-klass/Prezentaciyalar/tekst/TokKushi'
 import { OmNizami } from '../pages/Panler-bazasi/10-klass/Prezentaciyalar/tekst/OmNizami'
 import { ElektrTogininQuwatliligi } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/ElektrTogininQuwatliligi'
+import { RezistorlarReostatlar } from '../pages/Panler-bazasi/7-klass/Prezentaciyalar/tekst/RezistorlarReostatlar'
+import { ElektrQarsiligi } from '../pages/Panler-bazasi/7-klass/Prezentaciyalar/tekst/ElektrQarsiligi'
+import { ElektrKernewiHamOniOlshew } from '../pages/Panler-bazasi/7-klass/Prezentaciyalar/tekst/ElektrKernewiHamOniOlshew'
+import { TokKushi7 } from '../pages/Panler-bazasi/7-klass/Prezentaciyalar/tekst/TokKushi7'
+import { ShinjirdinBirBolegiUshinOmNizami } from '../pages/Panler-bazasi/7-klass/Prezentaciyalar/tekst/ShinjirdinBirBolegiUshinOmNizami'
+import { Tema50 } from '../pages/Panler-bazasi/7-klass/Máseleler/tekst/Tema50'
+import { Shinigiw33 } from '../pages/Panler-bazasi/7-klass/Máseleler/tekst/Shinigiw33'
+import { TokDereklerinTutastiriw } from '../pages/Panler-bazasi/8-klass/Ámeliy-shınıǵıwlar/tekst/TokDereklerinTutastiriw'
+import { Shinigiw7 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw7'
+import { Shinigiw9 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw9'
+import { Shinigiw10 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw10'
+import { Shinigiw13 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw13'
+import { Shinigiw18 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw18'
+import { Shinigiw29 } from '../pages/Panler-bazasi/8-klass/Máseleler/tekst/Shinigiw29'
+import { TutiniwshilardiAralasTutastiriw } from '../pages/Panler-bazasi/8-klass/Óz-betinshe/tekst/TutiniwshilardiAralasTutastiriw'
+import { ElektrTogininJumisi } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/ElektrTogininJumisi'
+import { KondensatorlardiParallelHamIzbeIzJalgaw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/KondensatorlardiParallelHamIzbeIzJalgaw'
+import { ElektrSiyimliligiKondensatorlar } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/ElektrSiyimliligiKondensatorlar'
+import { TutiniwshilardiParallelTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiParallelTutastiriw'
+import { TutiniwshilardiIzbeIzTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiIzbeIzTutastiriw'
+import { Shinigiw28 } from '../pages/Panler-bazasi/10-klass/Máseleler/tekst/Shinigiw28'
 
 const Routers: React.FC = () => {
     return (
@@ -41,10 +62,21 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/7-klass/oz-betinshe/tekst' element={< OzBetinsheTekst7 />} />
             <Route path='/panler-bazasi/7-klass/oz-betinshe/video' element={< OzBetinsheVideo7 />} />
 
-
+            {/* Ameliy */}
             <Route path='/panler-bazasi/7-klass/ameliy/tekst/Ampermetr-jardeminde-tutınıwshıdan-ótip-atırǵan-tok-kúshin-ólshew.pdf' element={< Ampermetr />} />
             <Route path='/panler-bazasi/7-klass/ameliy/tekst/Ommetr-járdeminde-rezistordıń-qarsılıǵın-ólshew.pdf' element={< Ommetr />} />
             <Route path='/panler-bazasi/7-klass/ameliy/tekst/Reostat-járdeminde-tok-kúshin-tártiplestiriw.pdf' element={< Reostat />} />
+
+            {/* Prezentaciya */}
+            <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/shinjirdin-bir-bolegi-ushin-om-nizami' element={< ShinjirdinBirBolegiUshinOmNizami />} />
+            <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/tok-kushi' element={< TokKushi7 />} />
+            <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/elektr-kernewi-ham-oni-olshew' element={< ElektrKernewiHamOniOlshew />} />
+            <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/elektr-qarsiligi' element={< ElektrQarsiligi />} />
+            <Route path='/panler-bazasi/7-klass/Prezentaciyalar/tekst/rezistorlar-reostatlar' element={< RezistorlarReostatlar />} />
+
+            {/* Masele */}
+            <Route path='/panler-bazasi/7-klass/Masele/tekst/33-shinigiw' element={< Shinigiw33 />} />
+            <Route path='/panler-bazasi/7-klass/Masele/tekst/50-tema' element={< Tema50 />} />
 
             {/* 8-Klass */}
             <Route path='/panler-bazasi/8-klass/joybar-jumislari/tekst' element={< JoyborTekst8 />} />
@@ -61,12 +93,27 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/8-klass/oz-betinshe/tekst' element={< OzBetinsheTekst8 />} />
             <Route path='/panler-bazasi/8-klass/oz-betinshe/video' element={< OzBetinsheVideo8 />} />
 
+            {/* Prezentaciya */}
             <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-toginin-quwatliligi' element={< ElektrTogininQuwatliligi />} />
-            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-toginin-jumisi' element={< TokKushi />} />
-            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/kondensatorlardi-parallel-ham-izbe-iz-jalgaw' element={< TokKushi />} />
-            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-siyimliligi-kondensatorlar' element={< TokKushi />} />
-            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/tutiniwshilardi-parallel-tutastiriw' element={< TokKushi />} />
-            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/tutiniwshilardi-izbe-iz-tutastiriw' element={< OmNizami />} />
+            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-toginin-jumisi' element={< ElektrTogininJumisi />} />
+            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/kondensatorlardi-parallel-ham-izbe-iz-jalgaw' element={< KondensatorlardiParallelHamIzbeIzJalgaw />} />
+            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-siyimliligi-kondensatorlar' element={< ElektrSiyimliligiKondensatorlar />} />
+            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/tutiniwshilardi-parallel-tutastiriw' element={< TutiniwshilardiParallelTutastiriw />} />
+            <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/tutiniwshilardi-izbe-iz-tutastiriw' element={< TutiniwshilardiIzbeIzTutastiriw />} />
+
+            {/* Ameliy */}
+            <Route path='/panler-bazasi/8-klass/ameliy/tekst/tok-dereklerin-tutastiriw' element={< TokDereklerinTutastiriw />} />
+
+            {/* Masele */}
+            <Route path='/panler-bazasi/8-klass/masele/tekst/7-shinigiw' element={< Shinigiw7 />} />
+            <Route path='/panler-bazasi/8-klass/masele/tekst/9-shinigiw' element={< Shinigiw9 />} />
+            <Route path='/panler-bazasi/8-klass/masele/tekst/10-shinigiw' element={< Shinigiw10 />} />
+            <Route path='/panler-bazasi/8-klass/masele/tekst/13-shinigiw' element={< Shinigiw13 />} />
+            <Route path='/panler-bazasi/8-klass/masele/tekst/18-shinigiw' element={< Shinigiw18 />} />
+            <Route path='/panler-bazasi/8-klass/masele/tekst/29-shinigiw' element={< Shinigiw29 />} />
+
+            {/* Oz-betinshe */}
+            <Route path='/panler-bazasi/8-klass/oz-betinshe/tekst/tutiniwshilardi-aralas-tutastiriw' element={< TutiniwshilardiAralasTutastiriw />} />
 
             {/* 9-Klass */}
             <Route path='/panler-bazasi/9-klass/joybar-jumislari/tekst' element={< JoyborTekst9 />} />
@@ -98,8 +145,12 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/10-klass/oz-betinshe/tekst' element={< OzBetinsheTekst10 />} />
             <Route path='/panler-bazasi/10-klass/oz-betinshe/video' element={< OzBetinsheVideo10 />} />
 
+            {/* Prezentaciya */}
             <Route path='/panler-bazasi/10-klass/Prezentaciyalar/tekst/tok-kushi-ham-toktin-tigizligi' element={< TokKushi />} />
             <Route path='/panler-bazasi/10-klass/Prezentaciyalar/tekst/toliq-shinjir-ushin-om-nizami' element={< OmNizami />} />
+
+            {/* Masele */}
+            <Route path='/panler-bazasi/10-klass/masele/tekst/28-shinigiw' element={< Shinigiw28 />} />
 
             {/* 11-Klass */}
             <Route path='/panler-bazasi/11-klass/joybar-jumislari/tekst' element={< JoyborTekst11 />} />
