@@ -10,9 +10,8 @@ export const Home = () => {
         <div className='logo-wrap'>
           <img src={logo} />
         </div>
-        <h4 style={{ textAlign: 'center' }}>"Fizika páni boyınsha prezentaciyalıq multimedialı shınıǵıwlar toplamı" <br /> cifrlı tálim ortalıǵı</h4>
         <h5>S.G. Kaypnazarov</h5>
-        <p>Nókis - 2023</p>
+        <p>Nókis - 2024</p>
       </div>
     </div>
   )

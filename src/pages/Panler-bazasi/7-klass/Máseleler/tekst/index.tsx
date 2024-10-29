@@ -11,7 +11,7 @@ export const MaseleTekst7: React.FC = () => {
           <li><span>33-shınıǵıw</span></li>
         </Link>
         <Link to={'/panler-bazasi/7-klass/Masele/tekst/50-tema'}>
-          <li><span>50-tema. MÁSELELER SHESHIW</span></li>
+          <li><span>50-tema. Máseleler sheshiw</span></li>
         </Link>
       </ul>
     </div>

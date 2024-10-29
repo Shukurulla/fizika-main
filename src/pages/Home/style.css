@@ -25,6 +25,7 @@
   color: #000;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   font-size: 2rem;
+  text-align: center;
 }
 
 .home-container h4 {
@@ -50,14 +51,14 @@
   height: 100%;
 }
 
-.home-container h5{
+.home-container h5 {
   font-size: 16px;
-  color: #777; 
+  color: #777;
   text-decoration: underline;
   margin-top: 100px;
 }
 
-.home-container p{
+.home-container p {
   margin-top: 15px;
   font-size: 20px;
   font-weight: 600;
@@ -68,42 +69,51 @@
   .home-container h1 {
     font-size: 1.6rem;
   }
+
   .logo-wrap {
     width: 160px !important;
     height: 160px !important;
   }
-  .home-container h4{
+
+  .home-container h4 {
     font-size: 1.3rem;
   }
 }
+
 @media (max-width: 600px) {
-    .home-container h1 {
-      font-size: 1.2rem;
-    }
-    .logo-wrap {
-      width: 140px !important;
-      height: 140px !important;
-    }
-    .home-container h4{
-      font-size: 1.1rem;
-    }
-    .home-container span{
-        font-size: 14px;
-    }
+  .home-container h1 {
+    font-size: 1.2rem;
   }
 
+  .logo-wrap {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .home-container h4 {
+    font-size: 1.1rem;
+  }
+
+  .home-container span {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 400px) {
-    .home-container{
-        padding: 1rem;
-    }
-    .home-container h1 {
-        font-size: 1.1rem;
-    }
-    .logo-wrap {
-        width: 130px !important;
-        height: 130px !important;
-    }
-    .home-container h4{
-        font-size: 1rem;
-    }
+  .home-container {
+    padding: 1rem;
+  }
+
+  .home-container h1 {
+    font-size: 1.1rem;
+  }
+
+  .logo-wrap {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .home-container h4 {
+    font-size: 1rem;
+  }
 }

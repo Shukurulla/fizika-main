@@ -40,6 +40,10 @@ import { ElektrSiyimliligiKondensatorlar } from '../pages/Panler-bazasi/8-klass/
 import { TutiniwshilardiParallelTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiParallelTutastiriw'
 import { TutiniwshilardiIzbeIzTutastiriw } from '../pages/Panler-bazasi/8-klass/Prezentaciyalar/tekst/TutiniwshilardiIzbeIzTutastiriw'
 import { Shinigiw28 } from '../pages/Panler-bazasi/10-klass/Máseleler/tekst/Shinigiw28'
+import { GlossariyTekst } from '../pages/Glossariy/tekst'
+import { CifrliElektronGlossariy } from '../pages/Glossariy/cifrli-elektron-glossariy'
+import { Test7 } from '../pages/Panler-bazasi/7-klass/test'
+import { Test8 } from '../pages/Panler-bazasi/8-klass/test'
 
 const Routers: React.FC = () => {
     return (
@@ -47,6 +51,8 @@ const Routers: React.FC = () => {
 
             <Route path='/' element={<Home />} />
             <Route path='/annotaciya' element={<Annotaciya />} />
+            <Route path='/Glossariy/tekst' element={<GlossariyTekst />} />
+            <Route path='/Glossariy/cifrlı-elektron-glossariy' element={<CifrliElektronGlossariy />} />
             {/* 7-Klass */}
             <Route path='/panler-bazasi/7-klass/joybar-jumislari/tekst' element={< JoyborTekst7 />} />
             <Route path='/panler-bazasi/7-klass/joybar-jumislari/video' element={< JoyborVideo7 />} />
@@ -61,6 +67,9 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/7-klass/ameliy/video' element={< AmeliyVideo7 />} />
             <Route path='/panler-bazasi/7-klass/oz-betinshe/tekst' element={< OzBetinsheTekst7 />} />
             <Route path='/panler-bazasi/7-klass/oz-betinshe/video' element={< OzBetinsheVideo7 />} />
+            
+            {/* Test */}
+            <Route path='/elektron-testler/7-klass' element={<Test7 />} />
 
             {/* Ameliy */}
             <Route path='/panler-bazasi/7-klass/ameliy/tekst/Ampermetr-jardeminde-tutınıwshıdan-ótip-atırǵan-tok-kúshin-ólshew.pdf' element={< Ampermetr />} />
@@ -92,6 +101,9 @@ const Routers: React.FC = () => {
             <Route path='/panler-bazasi/8-klass/ameliy/video' element={< AmeliyVideo8 />} />
             <Route path='/panler-bazasi/8-klass/oz-betinshe/tekst' element={< OzBetinsheTekst8 />} />
             <Route path='/panler-bazasi/8-klass/oz-betinshe/video' element={< OzBetinsheVideo8 />} />
+
+            {/* Test */}
+            <Route path='/elektron-testler/8-klass' element={<Test8 />} />
 
             {/* Prezentaciya */}
             <Route path='/panler-bazasi/8-klass/Prezentaciyalar/tekst/elektr-toginin-quwatliligi' element={< ElektrTogininQuwatliligi />} />

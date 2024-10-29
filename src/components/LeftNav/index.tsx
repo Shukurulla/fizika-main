@@ -108,7 +108,6 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                                 <Link to="/panler-bazasi/7-klass/joybar-jumislari/video">Video joybar jumıslar</Link>
                             </Menu.Item>
                         </Menu.SubMenu>
-
                     </Menu.SubMenu>
 
                     <Menu.SubMenu key="sub-2" title={<span>8-klass</span>}>
@@ -169,7 +168,6 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                                 <Link to="/panler-bazasi/8-klass/joybar-jumislari/video">Video joybar jumıslar</Link>
                             </Menu.Item>
                         </Menu.SubMenu>
-
                     </Menu.SubMenu>
 
                     <Menu.SubMenu key="sub-3" title={<span>9-klass</span>}>
@@ -359,10 +357,10 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
 
                 <Menu.SubMenu key="glossariy" title={<span>Glossariy</span>}>
                     <Menu.Item key="glossariy-tekst">
-                        <Link to="/glossariy/tekst">Glossariy teksti</Link>
+                        <Link to="/Glossariy/tekst">Glossariy teksti</Link>
                     </Menu.Item>
                     <Menu.Item key="cifrlı-elektron-glossariy">
-                        <Link to="/glossariy/elektron">Cifrlı elektron glossariy</Link>
+                        <Link to="/Glossariy/cifrlı-elektron-glossariy">Cifrlı elektron glossariy</Link>
                     </Menu.Item>
                 </Menu.SubMenu>
 
@@ -380,9 +378,15 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                         <Menu.Item key="test-sorawları-tekst">
                             <Link to="/sorawları-teksti">Sorawlar teksti</Link>
                         </Menu.Item>
-                        <Menu.Item key="test-elektron">
-                            <Link to="/elektron-testler">Elektron testler</Link>
-                        </Menu.Item>
+
+                        <Menu.SubMenu key="test-elektron" title={'Elektron testler'}>
+                            <Menu.Item key="elektron-testler7">
+                                <Link to="/elektron-testler/7-klass">7-klass</Link>
+                            </Menu.Item>
+                            <Menu.Item key="elektron-testler8">
+                                <Link to="/elektron-testler/8-klass">8-klass</Link>
+                            </Menu.Item>
+                        </Menu.SubMenu>
                     </Menu.SubMenu>
 
                     <Menu.Item key="mobil-qosımshalar">

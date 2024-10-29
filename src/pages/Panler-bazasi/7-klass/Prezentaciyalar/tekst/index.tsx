@@ -8,13 +8,13 @@ export const PrezentatsiyaTekst7: React.FC = () => {
       <h2>Prezentaciyalar</h2>
       <ul>
         <Link to={'/panler-bazasi/7-klass/Prezentaciyalar/tekst/shinjirdin-bir-bolegi-ushin-om-nizami'}>
-          <li><span>SHÍNJÍRDÍŃ BIR BÓLEGI USHÍN OM NÍZAMÍ</span></li>
+          <li><span>Shınjırdıń bir bólegi ushın Om nızamı</span></li>
         </Link>
         <Link to={'/panler-bazasi/7-klass/Prezentaciyalar/tekst/tok-kushi'}>
           <li><span>Tok kúshi</span></li>
         </Link>
         <Link to={'/panler-bazasi/7-klass/Prezentaciyalar/tekst/elektr-kernewi-ham-oni-olshew'}>
-          <li><span>ELEKTR KERNEWI HÁM ONÍ ÓLSHEW</span></li>
+          <li><span>Elektr kernewi hám onı ólshew</span></li>
         </Link>
         <Link to={'/panler-bazasi/7-klass/Prezentaciyalar/tekst/elektr-qarsiligi'}>
           <li><span>Elektr qarsılıǵı</span></li>
