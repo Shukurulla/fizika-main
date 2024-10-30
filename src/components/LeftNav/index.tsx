@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { MenuFoldOutlined, MenuUnfoldOutlined, } from '@ant-design/icons';
@@ -12,8 +12,6 @@ type collapsed = {
 }
 
 export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => {
-    const location = useLocation();
-    console.log(location)
 
     return (
         <Sider
@@ -91,14 +89,14 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                             </Menu.Item>
                         </Menu.SubMenu>
 
-                        <Menu.SubMenu key="oz-betinshe-7" title={<span>Óz betinshe tálim shınıǵıwları</span>} >
+                        {/* <Menu.SubMenu key="oz-betinshe-7" title={<span>Óz betinshe tálim shınıǵıwları</span>} >
                             <Menu.Item key="oz-betinshe-tekst-7">
                                 <Link to="/panler-bazasi/7-klass/oz-betinshe/tekst">Óz betinshe teksti</Link>
                             </Menu.Item>
                             <Menu.Item key="oz-betinshe-video-7">
                                 <Link to="/panler-bazasi/7-klass/oz-betinshe/video">Video óz betinsheler</Link>
                             </Menu.Item>
-                        </Menu.SubMenu>
+                        </Menu.SubMenu> */}
 
                         <Menu.SubMenu key="joybar-jumışlari-7" title={<span>Joybar jumısları</span>} >
                             <Menu.Item key="joybar-jumışları-tekst-7">
@@ -389,8 +387,8 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                         </Menu.SubMenu>
                     </Menu.SubMenu>
 
-                    <Menu.Item key="mobil-qosımshalar">
-                        <Link to="/mobil-qosımshalar">Mobil qosımshalar</Link>
+                    <Menu.Item key="mobil-qosimshalar">
+                        <Link to="/mobil-qosimshalar">Mobil qosımshalar</Link>
                     </Menu.Item>
 
                 </Menu.SubMenu>
@@ -400,11 +398,11 @@ export const LeftNavbar: React.FC<collapsed> = ({ collapsed, setCollapsed }) => 
                 </Menu.Item>
 
                 <Menu.Item key="gúwalıqlar">
-                    <Link to="/gúwalıqlar">Gúwalıqlar</Link>
+                    <Link to="/guwaliqlar">Gúwalıqlar</Link>
                 </Menu.Item>
 
                 <Menu.Item key="avtor">
-                    <Link to="/avtor">Avtor haqqında maǵlıwmat</Link>
+                    <Link to="/avtor-haqqinda-magliwmat">Avtor haqqında maǵlıwmat</Link>
                 </Menu.Item>
 
             </Menu>

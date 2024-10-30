@@ -1,10 +1,16 @@
+import { FaFileDownload } from "react-icons/fa";
 import './style.css'
 
 export const GlossariyTekst = () => {
-  return (
-    <div className="pdf-box">
-      <h3>Glossariy</h3>
-      <iframe src="https://docs.google.com/document/d/1BMjQV-Amkg9t8Ee1J2UBkONgPX1Jmqiv/preview" className='docc' allow="autoplay"></iframe>
-    </div>
-  )
+    const fileURL = 'https://docs.google.com/document/d/1BMjQV-Amkg9t8Ee1J2UBkONgPX1Jmqiv'
+
+    return (
+        <div className="pdf-box">
+            <a href={fileURL + "/export?format=docx"} title="Download this file" className="download-file">
+                <FaFileDownload />
+            </a>
+            <h3>Glossariy</h3>
+            <iframe src={fileURL + "/preview"} className='docc' allow="autoplay"></iframe>
+        </div>
+    )
 }

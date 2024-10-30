@@ -9,7 +9,6 @@ import { MenuFoldOutlined, MenuUnfoldOutlined, } from '@ant-design/icons';
 
 export const LayoutPage: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
-
   return (
     <Layout hasSider>
       <LeftNavbar collapsed={collapsed} setCollapsed={setCollapsed} />
