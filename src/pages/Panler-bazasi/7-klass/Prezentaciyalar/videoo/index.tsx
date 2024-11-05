@@ -3,7 +3,7 @@ import React from "react";
 export const PrezentatsiyaVideo7 = () => {
   return (
     <div>
-      <div className="my-3">
+      <div className="my-2">
         <iframe
           width="789"
           height="444"
@@ -15,6 +15,8 @@ export const PrezentatsiyaVideo7 = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
+      </div>
+      <div className="my-2">
         <iframe
           width="789"
           height="444"
